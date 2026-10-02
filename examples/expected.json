@@ -1,0 +1,88 @@
+{
+  "disposals": [
+    {
+      "asset": "ETH",
+      "cost_basis": "500.0",
+      "id": "sale",
+      "lots": [
+        {
+          "basis": "500.0",
+          "id": "move:0",
+          "quantity": "0.5"
+        }
+      ],
+      "net_proceeds": "790",
+      "quantity": "0.5",
+      "realized_gain": "290.0"
+    }
+  ],
+  "events": [
+    {
+      "id": "lot1",
+      "type": "acquire"
+    },
+    {
+      "id": "lot2",
+      "type": "acquire"
+    },
+    {
+      "parts": 1,
+      "realized_gain": "0",
+      "type": "transfer"
+    },
+    {
+      "asset": "ETH",
+      "cost_basis": "500.0",
+      "id": "sale",
+      "lots": [
+        {
+          "basis": "500.0",
+          "id": "move:0",
+          "quantity": "0.5"
+        }
+      ],
+      "net_proceeds": "790",
+      "quantity": "0.5",
+      "realized_gain": "290.0",
+      "type": "dispose"
+    }
+  ],
+  "lots": [
+    {
+      "asset": "ETH",
+      "id": "lot1",
+      "quantity": "1",
+      "timestamp": 1,
+      "unit_cost": "1000",
+      "wallet": "cold"
+    },
+    {
+      "asset": "ETH",
+      "id": "lot2",
+      "quantity": "1",
+      "timestamp": 2,
+      "unit_cost": "2000",
+      "wallet": "cold"
+    },
+    {
+      "asset": "ETH",
+      "id": "move:0",
+      "quantity": "0.5",
+      "timestamp": 1,
+      "unit_cost": "1000",
+      "wallet": "hot"
+    }
+  ],
+  "method": "FIFO",
+  "positions": {
+    "cold:ETH": {
+      "basis": "3000",
+      "quantity": "2"
+    },
+    "hot:ETH": {
+      "basis": "500.0",
+      "quantity": "0.5"
+    }
+  },
+  "realized_gain": "290.0"
+}

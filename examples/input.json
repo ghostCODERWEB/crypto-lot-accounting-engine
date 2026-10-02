@@ -1,0 +1,42 @@
+{
+  "method": "FIFO",
+  "events": [
+    {
+      "type": "acquire",
+      "id": "lot1",
+      "asset": "ETH",
+      "wallet": "cold",
+      "quantity": "2",
+      "cost": "2000",
+      "timestamp": 1
+    },
+    {
+      "type": "acquire",
+      "id": "lot2",
+      "asset": "ETH",
+      "wallet": "cold",
+      "quantity": "1",
+      "cost": "2000",
+      "timestamp": 2
+    },
+    {
+      "type": "transfer",
+      "id": "move",
+      "asset": "ETH",
+      "from_wallet": "cold",
+      "to_wallet": "hot",
+      "quantity": "1",
+      "timestamp": 3
+    },
+    {
+      "type": "dispose",
+      "id": "sale",
+      "asset": "ETH",
+      "wallet": "hot",
+      "quantity": "0.5",
+      "proceeds": "800",
+      "fee": "10",
+      "timestamp": 4
+    }
+  ]
+}
